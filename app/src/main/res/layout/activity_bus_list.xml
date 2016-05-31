@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.the_java_creed.mbus.BusList"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Bus List"
+        android:textSize="40dp"/> <!--prob a picture of ABL-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/spinner1"
+            android:spinnerMode="dropdown"
+            />
+        <!--
+        need to add item
+        -->
+    </LinearLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:drawSelectorOnTop="false"
+        android:paddingTop="10dp"
+        />
+    <!--
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/ListBus"
+                    android:contextClickable="true"
+                    android:onClick="busSelected">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bus Number "
+                            android:textSize="30dp"
+                            /><!- need to add variable-->
+    <!--  <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="30dp"
+          android:id="@+id/BusNumber"/> need to add variable-->
+    <!--   </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="Price $"
+               android:paddingRight="25dp"
+               android:textSize="25dp"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textSize="25dp"
+               android:text=""
+               android:id="@+id/busprice"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Date:"
+               android:textSize="25dp"
+               android:paddingRight="25dp"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/Date"
+               android:textSize="25dp"
+               android:paddingRight="50dp"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Departure Time:"
+               android:textSize="25dp"
+               android:paddingRight="50dp"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/Dept_Time"
+               android:textSize="25dp"
+               android:paddingRight="20dp"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Arrival Time:"
+               android:textSize="25dp"
+               android:paddingRight="50dp"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/Arrival_Time"
+               android:textSize="25dp"
+               android:paddingRight="20dp"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="From"
+               android:textSize="18dp"
+               android:paddingRight="20dp"
+               android:id="@+id/From"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="80dp"
+               android:id="@+id/To"
+               android:text="To"
+
+               android:textSize="18dp"
+               android:paddingRight="20dp"
+               />
+       </LinearLayout>
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"
+       android:id="@+id/ListBus1"
+       android:contextClickable="true"
+       android:onClick="busSelected">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Bus Number "
+               android:textSize="30dp"
+               /><!- need to add variable-->
+    <!--  <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="30dp"
+          android:id="@+id/BusNumber1"/><!- need to add variable-->
+    <!--  </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="Price $"
+              android:paddingRight="25dp"
+              android:textSize="25dp"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textSize="25dp"
+              android:text=""
+              android:id="@+id/busprice1"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Date:"
+              android:textSize="25dp"
+              android:paddingRight="25dp"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/Date1"
+              android:textSize="25dp"
+              android:paddingRight="50dp"
+              />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Departure Time:"
+              android:textSize="25dp"
+              android:paddingRight="50dp"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/Dept_Time1"
+              android:textSize="25dp"
+              android:paddingRight="20dp"
+              />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Arrival Time:"
+              android:textSize="25dp"
+              android:paddingRight="50dp"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/Arrival_Time1"
+              android:textSize="25dp"
+              android:paddingRight="20dp"
+              />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="From"
+              android:textSize="18dp"
+              android:paddingRight="20dp"
+              android:id="@+id/From1"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="80dp"
+              android:id="@+id/To1"
+              android:text="To"
+
+              android:textSize="18dp"
+              android:paddingRight="20dp"
+              />
+      </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>
+</ScrollView> -->
+
+</LinearLayout>

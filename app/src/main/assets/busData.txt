@@ -1,0 +1,8 @@
+619|San Jose|Fremont|0730|0800|32
+666|San Jose|San Francisco|0730|0930|22
+123|San Jose|Pleasanton|0730|0830|30
+696|San Jose|Los Angeles|0730|1300|20
+333|San Jose|Seattle|0730|0930|32
+121|San Jose|San Diego|0730|1600|50
+242|San Jose|Fresno|0730|1420|40
+363|San Jose|Oakland|0730|1200|60
